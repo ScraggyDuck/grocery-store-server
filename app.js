@@ -4,6 +4,9 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const path = require('path');
 
+//Import Utils
+const AppError = require('./utils/appError');
+
 //Import Routes
 const viewRouter = require('./routes/view.route');
 const productRouter = require('./routes/product.route');
@@ -35,7 +38,7 @@ app.use('/api/v1/products', productRouter);
 
 //Check Unhandled Routes
 app.all('*', (req, res, next) => {
-  res.send(`Can't find ${req.originalUrl} on this server!`, 404);
+  next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
 
 module.exports = app;
