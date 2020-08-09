@@ -1,4 +1,5 @@
 const app = require('./app');
+const connectDB = require('./utils/db');
 
 // 0) HANDLE UNCAUGHT EXCEPTION
 process.on('uncaughtException', (err) => {
@@ -8,6 +9,7 @@ process.on('uncaughtException', (err) => {
 });
 
 // 1) CONNECT DATABASE
+connectDB();
 
 // 2) SETTING PORT AND LISTEN SEVER
 const PORT = process.env.PORT || 8000;

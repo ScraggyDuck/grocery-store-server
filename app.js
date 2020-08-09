@@ -6,6 +6,7 @@ const path = require('path');
 
 //Import Routes
 const viewRouter = require('./routes/view.route');
+const productRouter = require('./routes/product.route');
 
 //Config env
 dotenv.config('.env');
@@ -30,6 +31,7 @@ app.use(cors());
 
 //2. ROUTES
 app.use('/', viewRouter);
+app.use('/api/v1/products', productRouter);
 
 //Check Unhandled Routes
 app.all('*', (req, res, next) => {
