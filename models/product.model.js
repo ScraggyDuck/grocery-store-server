@@ -1,20 +1,20 @@
 const mongoose = require('mongoose');
 
 const productSchema = mongoose.Schema({
-  name: {
+  title: {
     type: String,
-    required: [true, 'A product must have a name'],
+    required: [true, 'A product must have a title'],
   },
   price: {
     type: Number,
     required: [true, 'A product must have a price'],
   },
-  percentDiscount: {
+  discountInPercent: {
     type: Number,
     validate: {
       validator: function (val) {
         // this only points to current doc on NEW document creation
-        return val <= 1 && val >= 0;
+        return val <= 100 && val >= 0;
       },
       message: 'Discount percent ({VALUE}) should be <= 0 and >= 1',
     },
