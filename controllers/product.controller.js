@@ -3,18 +3,22 @@ const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 
 exports.getAll = catchAsync(async (req, res, next) => {
-  const { limit, category, keyword } = req.query;
+  const { limit, category, keyword, offset } = req.query;
   //Tim tat cac cac san pham co chua keyword
   let regex = new RegExp(keyword, 'i');
-  if (limit) {
+  if (limit && offset) {
     let products = [];
     if (!category && !keyword) {
-      products = await Product.find().limit(parseInt(limit));
+      products = await Product.find()
+        .limit(parseInt(limit))
+        .skip(parseInt(offset));
     } else {
       let filter = category
-        ? { categories: [category], name: regex }
-        : { name: regex };
-      products = await Product.find(filter).limit(parseInt(limit));
+        ? { categories: { $all: [category] }, title: regex }
+        : { title: regex };
+      products = await Product.find(filter)
+        .limit(parseInt(limit))
+        .skip(parseInt(offset));
     }
     res.status(201).json({
       status: 'success',
