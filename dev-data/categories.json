@@ -1,0 +1,278 @@
+{
+  "categories": [
+    {
+      "title": "Fruits & Vegetables",
+      "slug": "fruits-and-vegetables",
+      "icon": "FruitsVegetable",
+      "children": [
+        {
+          "title": "Fruits",
+          "slug": "fruits"
+        },
+        {
+          "title": "vegetables",
+          "slug": "vegetables"
+        }
+      ]
+    },
+    {
+      "title": "Meat & Fish",
+      "slug": "meat-and-fish",
+      "icon": "MeatFish",
+      "children": [
+        {
+          "title": "Fresh Fish",
+          "slug": "fresh-fish"
+        },
+        {
+          "title": "Meat",
+          "slug": "meat"
+        }
+      ]
+    },
+    {
+      "title": "Snacks",
+      "slug": "snacks",
+      "icon": "Snacks",
+      "children": [
+        {
+          "title": "Biscuits",
+          "slug": "biscuits"
+        },
+        {
+          "title": "Chocolates",
+          "slug": "chocolates"
+        },
+        {
+          "title": "Crisps",
+          "slug": "crisps"
+        },
+        {
+          "title": "Noodles",
+          "slug": "noodles"
+        },
+        {
+          "title": "Nuts",
+          "slug": "nuts"
+        },
+        {
+          "title": "Pasta",
+          "slug": "pasta"
+        },
+        {
+          "title": "Sauce",
+          "slug": "sauce"
+        },
+        {
+          "title": "Soup",
+          "slug": "soup"
+        }
+      ]
+    },
+    {
+      "title": "Pet Care",
+      "slug": "petcare",
+      "icon": "PetCare",
+      "children": [
+        {
+          "title": "Cat Food",
+          "slug": "catfood"
+        },
+        {
+          "title": "Dog Food",
+          "slug": "dogfood"
+        },
+        {
+          "title": "KItten Food",
+          "slug": "kittenfood"
+        },
+        {
+          "title": "Pet Accessories",
+          "slug": "petaccessories"
+        }
+      ]
+    },
+    {
+      "title": "Home & Cleaning",
+      "slug": "home-cleaning",
+      "icon": "HomeCleaning",
+      "children": [
+        {
+          "title": "Air Freshner",
+          "slug": "air_freshner"
+        },
+        {
+          "title": "Cleaning Products",
+          "slug": "cleaning_products"
+        },
+        {
+          "title": "Dishwasher",
+          "slug": "dishwasher"
+        },
+        {
+          "title": "Kitchen Accessories",
+          "slug": "kitchen_accessories"
+        },
+        {
+          "title": "Laundry",
+          "slug": "laundry"
+        },
+        {
+          "title": "Pest Control",
+          "slug": "Pest_control"
+        }
+      ]
+    },
+    {
+      "title": "Dairy",
+      "slug": "dairy",
+      "icon": "Dairy",
+      "children": [
+        {
+          "title": "Butter",
+          "slug": "butter"
+        },
+        {
+          "title": "Egg",
+          "slug": "egg"
+        },
+        {
+          "title": "Milk",
+          "slug": "milk"
+        },
+        {
+          "title": "Milk Cream",
+          "slug": "milk_cream"
+        },
+        {
+          "title": "Powder Milk",
+          "slug": "Powder_Milk"
+        },
+        {
+          "title": "Yogourt",
+          "slug": "yogourt"
+        }
+      ]
+    },
+    {
+      "title": "Cooking",
+      "slug": "cooking",
+      "icon": "Cooking",
+      "children": [
+        {
+          "title": "Oil",
+          "slug": "oil"
+        },
+        {
+          "title": "Rice",
+          "slug": "rice"
+        },
+        {
+          "title": "Salt & Sugar",
+          "slug": "Salt_sugar"
+        },
+        {
+          "title": "Spices",
+          "slug": "milk_cream"
+        }
+      ]
+    },
+    {
+      "title": "Breakfast",
+      "slug": "breakfast",
+      "icon": "Breakfast",
+      "children": [
+        {
+          "title": "Bread",
+          "slug": "bread"
+        },
+        {
+          "title": "Cereal",
+          "slug": "cereal"
+        },
+        {
+          "title": "Honey",
+          "slug": "honey"
+        },
+        {
+          "title": "Jam",
+          "slug": "jam"
+        },
+        {
+          "title": "Mayonnaise",
+          "slug": "mayonnaise"
+        },
+        {
+          "title": "Oats",
+          "slug": "oats"
+        }
+      ]
+    },
+    {
+      "title": "Beverage",
+      "slug": "beverage",
+      "icon": "Beverage",
+      "children": [
+        {
+          "title": "Coffee",
+          "slug": "coffee"
+        },
+        {
+          "title": "Energy Drinks",
+          "slug": "energy_drinks"
+        },
+        {
+          "title": "Juice",
+          "slug": "juice"
+        },
+        {
+          "title": "Fizzy Drinks",
+          "slug": "fizzy_drinks"
+        },
+        {
+          "title": "Syrup & powder",
+          "slug": "syrup_powder"
+        },
+        {
+          "title": "Tea",
+          "slug": "tea"
+        },
+        {
+          "title": "Water",
+          "slug": "water"
+        }
+      ]
+    },
+    {
+      "title": "Beauty & Health",
+      "slug": "health_beauty",
+      "icon": "BeautyHealth",
+      "children": [
+        {
+          "title": "Bath",
+          "slug": "bath"
+        },
+        {
+          "title": "Cream",
+          "slug": "cream"
+        },
+        {
+          "title": "Deodorant",
+          "slug": "deodorant"
+        },
+        {
+          "title": "Face Care",
+          "slug": "face_care"
+        },
+        {
+          "title": "Oral Care",
+          "slug": "Oral_care"
+        },
+        {
+          "title": "Shaving Needs",
+          "slug": "shaving_needs"
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ const AppError = require('../utils/appError');
 
 exports.getAll = catchAsync(async (req, res, next) => {
   const { limit, category, keyword, offset } = req.query;
-  //Tim tat cac cac san pham co chua keyword
+  //Find all products contain keyword
   let regex = new RegExp(keyword, 'i');
   if (limit && offset) {
     let products = [];

@@ -11,6 +11,7 @@ const AppError = require('./utils/appError');
 const viewRouter = require('./routes/view.route');
 const productRouter = require('./routes/product.route');
 const userRouter = require('./routes/user.route');
+const categoryRouter = require('./routes/category.route');
 
 //Config env
 dotenv.config('.env');
@@ -37,6 +38,7 @@ app.use(cors());
 app.use('/', viewRouter);
 app.use('/api/v1/products', productRouter);
 app.use('/api/v1/users', userRouter);
+app.use('/api/v1/categories', categoryRouter);
 
 //Check Unhandled Routes
 app.all('*', (req, res, next) => {
