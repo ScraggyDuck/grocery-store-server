@@ -8,7 +8,9 @@ exports.getAll = catchAsync(async (req, res, next) => {
   let regex = new RegExp(keyword, 'i');
   if (limit && offset) {
     let products = [];
+    let countProduct = 0;
     if (!category && !keyword) {
+      countProduct = await Product.countDocuments();
       products = await Product.find()
         .limit(parseInt(limit))
         .skip(parseInt(offset));
@@ -16,6 +18,8 @@ exports.getAll = catchAsync(async (req, res, next) => {
       let filter = category
         ? { categories: { $all: [category] }, title: regex }
         : { title: regex };
+      countProduct = await Product.countDocuments(filter);
+
       products = await Product.find(filter)
         .limit(parseInt(limit))
         .skip(parseInt(offset));
@@ -24,6 +28,7 @@ exports.getAll = catchAsync(async (req, res, next) => {
       status: 'success',
       data: {
         data: products,
+        total: countProduct,
       },
     });
   } else {

@@ -26,6 +26,10 @@ const createSendToken = (user, statusCode, res) => {
 };
 
 exports.signup = catchAsync(async (req, res, next) => {
+  const user = await User.findOne({ email: req.body.email });
+  if (user) {
+    return next(new AppError('Email already exists!', 400));
+  }
   //satize data to create a user with role user
   const newUser = await User.create({
     name: req.body.name,
